@@ -1,0 +1,122 @@
+body {
+    width: 100vw;
+    height: 150vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar style */
+.navbar-custom {
+    position: sticky;
+    width: 100vw;
+    height: 10vh;
+    background-color: #F9EDE9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Orelega One', serif;
+    font-size: 2.5vh;
+    text-transform: uppercase;
+    color: black;
+}
+
+.navbar-subheading {
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.navbar-subheading:hover {
+    text-decoration: underline;
+}
+
+.imageLogo {
+    width: 32.8rem;
+    height: 3.5rem;
+    flex-shrink: 0;
+}
+
+.imageLogo:hover {
+    cursor: pointer;
+}
+
+.services-container {
+    position: relative; /* Establishes a positioning context */
+    display: inline-block; /* Keeps the container size relative to its contents */
+}
+
+.services-image {
+    width: 128rem; /* Set the width */
+    height: 16rem; /* Automatically adjust height */
+    max-width: 100%; /* Prevents overflow */
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.services-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: Ovo, serif;
+    font-size: 5.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    white-space: nowrap; /* Prevent text from wrapping */
+    z-index: 1;
+}
+
+.carousel-body {
+    margin-top: 10vh;
+    margin-left: 2.2rem;
+    display: flex;
+    justify-content: left;
+    align-items: start; /* Align items to the top */
+    gap: 2rem; 
+}
+
+.carousel {
+    flex: 0 0 65%;
+    max-width: 65%; /* Make the carousel smaller */
+    max-height: 65%; /* Make the carousel smaller */
+}
+
+.services-description {
+    margin-left: 3rem;
+    padding: 2rem;
+    background-color: #f9ede9; /* Light background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Limit the width */
+    margin-right: 2.2rem;
+}
+
+.carousel-caption > h5 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.services-description-heading {
+    font-family: 'Orelega One', serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #333; /* Darker text color for contrast */
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #c0a080; /* A subtle underline */
+    padding-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.services-description-text {
+    font-family: 'Ovo', serif;
+    font-size: 1.2rem;
+    color: #555; /* Softer text color */
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    max-width: 100%;
+    word-wrap: break-word;
+    margin-top: 1rem;
+}
+

@@ -1,0 +1,83 @@
+/* Ensure body takes full viewport */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 130vh;
+  background-color: white;
+  overflow: hidden;
+}
+
+/* Navbar style */
+.navbar-custom {
+  height: 10vh;
+  background-color: #F9EDE9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Orelega One', serif;
+  font-size: 2.5vh;
+  text-transform: uppercase;
+  color: black;
+}
+
+.navbar-subheading {
+  cursor: pointer;
+  padding-top: 20px;
+}
+
+.navbar-subheading:hover {
+  text-decoration: underline;
+}
+
+.imageLogo {
+  width: 32.8rem;
+  height: 3.5rem;
+  flex-shrink: 0;
+}
+
+/* Image placeholder with responsive height */
+.main-image {
+  width: 100%;
+  opacity: 0.75;
+}
+
+/* Book Now button */
+.book-now {
+  position: absolute;
+  font-weight: 400;
+  stroke: black;
+  stroke-width: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #F9EDE9;
+  border: 2px solid black;
+  padding: 2vh 4vw;
+  font-size: 3vh;
+  font-family: 'Orelega One', serif;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.book-now:hover {
+  background-color: blue;
+}
+
+/* Footer style */
+.footer-custom {
+  height: 10vh;
+  background: linear-gradient(90deg, black 0%, #F9EDE9 87%, #F9EDE9 90%);
+  color: white;
+  font-family: 'Orelega One', serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2vh;
+}
+
+  .imageLogo:hover {
+    cursor: pointer;
+}
+  

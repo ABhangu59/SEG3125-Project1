@@ -1,0 +1,76 @@
+body {
+    width: 100vw;
+    height: 150vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar style */
+.navbar-custom {
+    position: sticky;
+    width: 100vw;
+    height: 10vh;
+    background-color: #F9EDE9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Orelega One', serif;
+    font-size: 2.5vh;
+    text-transform: uppercase;
+    color: black;
+}
+
+.navbar-subheading {
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.navbar-subheading:hover {
+    text-decoration: underline;
+}
+
+.imageLogo {
+    width: 32.8rem;
+    height: 3.5rem;
+    flex-shrink: 0;
+}
+
+.imageLogo:hover {
+    cursor: pointer;
+}
+
+.location-container {
+    position: relative; 
+    display: flex;          /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;    /* Center horizontally */
+}
+
+.location-image {
+    width: 128rem; /* Set the width */
+    height: 16rem; /* Automatically adjust height */
+    max-width: 100%; /* Prevents overflow */
+    z-index: -1;
+    filter: brightness(50%); /* Dim the image to make text stand out */
+}
+
+.location-heading {
+    position: absolute;
+    top: 25%;
+    left: 49%;
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: Ovo, serif;
+    font-size: 5.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    white-space: nowrap; /* Prevent text wrapping */
+    z-index: 1; /* Ensures the text is above the image */
+}
+
+.card {
+    margin: 5vh;
+}
