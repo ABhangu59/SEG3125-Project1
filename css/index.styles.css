@@ -63,7 +63,8 @@ body {
 }
 
 .book-now:hover {
-  background-color: blue;
+  background-color: #F9EDE9;
+  opacity: 45%;
 }
 
 /* Footer style */

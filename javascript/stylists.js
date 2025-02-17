@@ -1,19 +1,19 @@
 const stylists = {
     'shai': {
         text: 'Shai is the king of fades, from crisp skin fades to sharp lineups. With an eye for detail and a warm personality, he ensures every client leaves feeling fresh and confident. His beard grooming skills are unmatched, making him a favorite for anyone looking to elevate their look.',
-        image: './assets/shai-style.jpg'
+        image: '../assets/shai-style.jpg'
     },
     'dua': {
         text: 'Dua is a color wizard who brings hair to life with stunning balayage, vivid colors, and elegant styles. Her artistry shines through every curl and wave, and her genuine care for her clients makes every appointment feel like a visit with an old friend.',
-        image: './assets/dua-style.jpg'
+        image: '../assets/dua-style.jpg'
     },
     'benito': {
         text: 'Benito is all about timeless style. Specializing in curly hair care, precise cuts, and classic barbering, he blends tradition with modern techniques. His passion for his craft and attention to detail leave every client with a tailored, standout look.',
-        image: './assets/benito-style.jpg'
+        image: '../assets/benito-style.jpg'
     },
     'bron': {
         text: 'Bron is the GOAT when it comes to textured cuts, intricate braids, and trendsetting styles. With a laid-back charm and unmatched skill, he creates iconic looks that stand the test of time, just like a true legend.',
-        image: './assets/bron-style.jpg'
+        image: '../assets/bron-style.jpg'
     }
   };
   

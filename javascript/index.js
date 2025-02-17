@@ -16,3 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+document.getElementById('book-now-butt').addEventListener('click', () => {
+    window.location.href = 'booking.html';
+});
