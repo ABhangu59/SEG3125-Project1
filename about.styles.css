@@ -1,0 +1,108 @@
+body {
+    width: 100vw;
+    height: 150vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar style */
+.navbar-custom {
+    position: sticky;
+    width: 100vw;
+    height: 10vh;
+    background-color: #F9EDE9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Orelega One', serif;
+    font-size: 2.5vh;
+    text-transform: uppercase;
+    color: black;
+}
+
+.navbar-subheading {
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.navbar-subheading:hover {
+    text-decoration: underline;
+}
+
+.imageLogo {
+    width: 32.8rem;
+    height: 3.5rem;
+    flex-shrink: 0;
+}
+
+.imageLogo:hover {
+    cursor: pointer;
+}
+
+
+.about-container {
+    position: relative; /* Establishes a positioning context */
+    display: inline-block; /* Keeps the container size relative to its contents */
+}
+
+.about-image {
+    width: 128rem; /* Set the width */
+    height: 16rem; /* Automatically adjust height */
+    max-width: 100%; /* Prevents overflow */
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.about-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: Ovo, serif;
+    font-size: 5.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap; /* Prevent text from wrapping */
+    z-index: 1;
+}
+
+#about-text {
+    color: black;
+    font-size: 20px;
+    font-family: Ovo;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.about-text {
+    max-width: 747px;
+    margin:auto !important;
+}
+
+#sub-heading {
+    margin-top: 5vh;
+    color: black;
+    font-family: Ovo;
+    font-weight: 400;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.about-values {
+    max-width: calc(100% - 480px);
+    margin: auto;
+}
+.about-values img {
+    filter: grayscale(100%);
+}
+.about-values img:hover {
+    filter: none;
+    transition: filter 0.3s ease-in-out;
+}
+.about-values p {
+    font-size: 16px;
+    color: #555;
+}

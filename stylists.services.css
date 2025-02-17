@@ -1,0 +1,92 @@
+body {
+    width: 100vw;
+    height: 155vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar style */
+.navbar-custom {
+    position: sticky;
+    width: 100vw;
+    height: 10vh;
+    background-color: #F9EDE9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Orelega One', serif;
+    font-size: 2.5vh;
+    text-transform: uppercase;
+    color: black;
+}
+
+.navbar-subheading {
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.navbar-subheading:hover {
+    text-decoration: underline;
+}
+
+.imageLogo {
+    width: 32.8rem;
+    height: 3.5rem;
+    flex-shrink: 0;
+}
+
+.imageLogo:hover {
+    cursor: pointer;
+}
+
+.stylist-card {
+    position: relative;
+    text-align: center;
+}
+
+.stylist-img {
+    width: 100%; /* Ensures full-width images */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 420px; /* Optional: Limits image height */
+    object-fit: cover; /* Ensures image scales nicely */
+    border-radius: 8px; /* Optional: Rounded edges */
+}
+
+.stylist-name {
+    position: absolute;
+    top: 20px; /* Adjusts name position */
+    left: 20px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgb(39, 53, 103);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#meetOurStylists {
+    color: black;
+    font-family: Ovo;
+    font-weight: 400;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+.stylist-card:hover {
+    cursor: pointer;
+}
+
+#book-appointment {
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 2rem;
+}
+
+#book-appointment:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}

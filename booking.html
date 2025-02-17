@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="booking.styles.css" rel="stylesheet">
+
+    <title>STYLE BLVD - BOOKING</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar-custom">
+        <div class="navbar-subheading">SERVICES</div>
+        <div class="navbar-subheading">ABOUT</div>
+        <div class="navbar-subheading">LOCATION</div>
+        <img src="./assets/logo.png" class="imageLogo" />
+        <div class="navbar-subheading">CONTACT</div>
+        <div class="navbar-subheading">STYLISTS</div>
+        <div class="navbar-subheading">BOOKING</div>
+    </div>
+
+
+   <!-- HTML Structure for Booking Pages - Pick A Service -->
+<div class="booking-container py-5" style="margin: 0 15vh;">
+    <h2 class="text-center fw-bold mb-4" id="sub-heading">Pick A Service</h2>
+
+    <div class="text-center mb-5">
+        <img src="./assets/ProgressBar.png" alt="Booking Process" class="img-fluid">
+    </div>
+
+    <div class="booking-content text-center">
+        <form class="mb-4">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="service" class="form-label">Services:</label>
+                        <select id="service" class="form-select">
+                            <option selected>Choose A Service</option>
+                            <option value="Haircut">Haircut</option>
+                            <option value="Shave">Shave</option>
+                            <option value="Coloring">Coloring</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="stylist" class="form-label">Stylists:</label>
+                        <select id="stylist" class="form-select">
+                            <option selected>Choose A Stylist</option>
+                            <option value="Shai">Shai</option>
+                            <option value="Dua">Dua</option>
+                            <option value="Benito">Benito</option>
+                            <option value="Bron">Bron</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center gap-5 mt-4">
+                    <button type="button" id="add-service-btn" class="btn btn-outline-dark px-4 py-2">Add</button>
+                    <button type="button" id="next-btn" style="margin-left: auto;" class="btn btn-dark px-4 py-2">Next</button>
+                </div>
+            </form>
+
+        <div id="selected-services" class="mt-4"></div>
+    </div>
+</div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./javascript/booking.js"></script>
+</body>
+</html>

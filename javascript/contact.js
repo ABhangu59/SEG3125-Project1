@@ -16,3 +16,18 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+// event listener for book button 
+const locationButton = document.getElementById('location-button');
+if (locationButton) {
+    locationButton.addEventListener('click', () => {
+        window.location.href = 'location.html';
+    });
+}
+
+const bookButton = document.getElementById('book-appointment');
+    if (bookButton) {
+        bookButton.addEventListener('click', () => {
+            window.location.href = 'booking.html';
+        });
+    }

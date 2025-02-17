@@ -71,6 +71,61 @@ body {
     z-index: 1; /* Ensures the text is above the image */
 }
 
+.location-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
 .card {
     margin: 5vh;
+}
+
+.location-text, .location-hours {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adds consistent spacing between icon and text */
+}
+
+.location-text {
+    margin-right: auto;
+}
+
+.location-pin, .location-clock {
+    width: 25px;
+    height: 25px;
+}
+
+.address-title {
+    color: black;
+    font-size: 22px;
+    font-family: Ovo, serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.address-details {
+    color: black;
+    font-size: 20px;
+    font-family: Ovo, serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.location-hours p {
+    margin: 0;
+    margin-right: 5vh;
+    color: #000;
+    font-family: Ovo, serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+i, .location-pin, .location-clock {
+    margin-right: 10px;
 }
