@@ -1,8 +1,10 @@
 // STEP 2 CODE : 
 document.getElementById('appointment-form').addEventListener('submit', function(event) {
     event.preventDefault();
+    let serviceSelection = JSON.parse(sessionStorage.getItem('serviceSelection'));
 
     const appointment = {
+        ...serviceSelection,
         firstName: document.getElementById('first-name').value,
         lastName: document.getElementById('last-name').value,
         email: document.getElementById('email').value,
@@ -12,11 +14,10 @@ document.getElementById('appointment-form').addEventListener('submit', function(
         notes: document.getElementById('notes').value,
     };
 
-    localStorage.setItem('appointment', JSON.stringify(appointment));
+    sessionStorage.setItem('appointment', JSON.stringify(appointment));
     window.location.href = 'booking-step3.html';
 });
-
-document.getElementById('back-btn').addEventListener('click', function() {
+document.getElementById('back-tostp1-btn').addEventListener('click', () => {
     window.location.href = 'booking.html';
 });
 
@@ -41,6 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Handle Next button to move forward while preserving data
-document.getElementById('next-btn').addEventListener('click', () => {
+document.getElementById('next-tostp3-btn').addEventListener('click', () => {
     window.location.href = 'booking-step3.html';
 });

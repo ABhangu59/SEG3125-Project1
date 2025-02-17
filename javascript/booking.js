@@ -7,25 +7,20 @@ document.getElementById('add-service-btn').addEventListener('click', () => {
         return;
     }
 
-    const selection = { service, stylist };
-    let bookings = JSON.parse(localStorage.getItem('bookings')) || [];
-    bookings.push(selection);
-    localStorage.setItem('bookings', JSON.stringify(bookings));
+    const price = service.substring(0, 4).replace("$", ""); // Extract price
+    const selection = { service, stylist, price };
+    sessionStorage.setItem('serviceSelection', JSON.stringify(selection));
 
     const selectedDiv = document.getElementById('selected-services');
     const item = document.createElement('div');
-    item.className = 'alert alert-secondary';
-    item.style.marginTop = '10px';
+    item.className = 'alert alert-secondary mt-2';
     item.innerHTML = `<strong>Service:</strong> ${service} | <strong>Stylist:</strong> ${stylist}`;
     selectedDiv.appendChild(item);
 });
 
-// Handle Next button to move forward while preserving data
-document.getElementById('next-btn').addEventListener('click', () => {
+document.getElementById('next-stp1-btn').addEventListener('click', () => {
     window.location.href = 'booking-step2.html';
 });
-
-
 // NAV BAR:: 
 
 document.addEventListener("DOMContentLoaded", () => {
